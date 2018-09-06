@@ -1,4 +1,3 @@
 Marc Baltes
-Favorite color: Blue
-ID: P100808909
-cat are better than dogs 
+bday: 04/04/1998
+favorite color: blue
