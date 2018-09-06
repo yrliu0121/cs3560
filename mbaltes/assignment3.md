@@ -1,3 +1,3 @@
 Marc Baltes
-bday: 04/04/1998
-favorite color: blue
+bday: 04/05/1998
+fav color: blue
