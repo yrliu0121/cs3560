@@ -1,2 +1,0 @@
-Wyatt
-Yellow
