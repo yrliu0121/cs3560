@@ -1,1 +1,3 @@
 Jared
+
+favorite color: Green
