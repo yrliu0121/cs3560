@@ -1,5 +1,8 @@
 Paul Kelting
-Favorite Color: Red
-Birthstate: California
-Main Coding Language: C++
+
+I was born in California
+
 I play tennis
+
+My favorite color is red
+
