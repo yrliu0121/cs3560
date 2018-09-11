@@ -1,0 +1,325 @@
+removed directory 'cs3560/er366315'
+removed 'cs3560/jf335914/Assignment3.md'
+removed directory 'cs3560/jf335914'
+removed 'cs3560/tm808217/Screenshots2.jpg'
+removed 'cs3560/tm808217/Assignment3.md'
+removed 'cs3560/tm808217/Screenshots1.jpg'
+removed directory 'cs3560/tm808217'
+removed 'cs3560/DEADJOE'
+removed 'cs3560/DanIngramsPush.txt'
+removed 'cs3560/bc818216/Assignment3.md'
+removed directory 'cs3560/bc818216'
+removed 'cs3560/RenBowers.txt'
+removed 'cs3560/mo957316/Screenshots2.jpg'
+removed 'cs3560/mo957316/Assignment3.md'
+removed 'cs3560/mo957316/Screenshots1.jpg'
+removed directory 'cs3560/mo957316'
+removed 'cs3560/jw784615/screenshot01.jpg'
+removed 'cs3560/jw784615/screenshot02.jpg'
+removed 'cs3560/jw784615/Assignment3.md'
+removed directory 'cs3560/jw784615'
+removed directory 'cs3560'
+bcarman@odd05:~/CS3560$ ls
+bcarman@odd05:~/CS3560$ clear
+
+bcarman@odd05:~/CS3560$ ls
+bcarman@odd05:~/CS3560$ git clone https://github.com/yrliu0121/cs3560.git
+Cloning into 'cs3560'...
+remote: Counting objects: 338, done.
+remote: Compressing objects: 100% (79/79), done.
+remote: Total 338 (delta 37), reused 104 (delta 17), pack-reused 214
+Receiving objects: 100% (338/338), 1.79 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (94/94), done.
+Checking connectivity... done.
+bcarman@odd05:~/CS3560$ ls
+cs3560
+bcarman@odd05:~/CS3560$ cd cs3560
+bcarman@odd05:~/CS3560/cs3560$ ls
+aa955414  DanIngramsPush.txt  er366315	jf335914  mb800915	 tm808217
+ab272816  ec456116	      jc263515	jw784615  mo957316	 wr140815
+ac833914  ec884814	      jc402615	jw877415  RenBowers.txt  ws998116
+bcarman@odd05:~/CS3560/cs3560$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/yrliu0121/cs3560
+   5107834..cbadbf0  master     -> origin/master
+Updating 5107834..cbadbf0
+Fast-forward
+ bc818216/Assignment3.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+bcarman@odd05:~/CS3560/cs3560$ ls
+aa955414  DanIngramsPush.txt  jc263515	jw877415       tm808217
+ab272816  ec456116	      jc402615	mb800915       wr140815
+ac833914  ec884814	      jf335914	mo957316       ws998116
+bc818216  er366315	      jw784615	RenBowers.txt
+bcarman@odd05:~/CS3560/cs3560$ cd bc818216
+bcarman@odd05:~/CS3560/cs3560/bc818216$ ls
+Assignment3.md
+bcarman@odd05:~/CS3560/cs3560/bc818216$ more *.md
+Benjamin
+bcarman@odd05:~/CS3560/cs3560/bc818216$ vi Assignment3.md 
+bcarman@odd05:~/CS3560/cs3560/bc818216$ more *.md
+Benjamin
+I LOVE the color blue!
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git add .
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Assignment3.md
+
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git commit -m "Added favorite color to file Assignment3.md"
+[master 9dd838d] Added favorite color to file Assignment3.md
+ 1 file changed, 1 insertion(+)
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': benjamincarman
+Password for 'https://benjamincarman@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 369 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560.git
+   cbadbf0..9dd838d  master -> master
+bcarman@odd05:~/CS3560/cs3560/bc818216$ ls
+Assignment3.md
+bcarman@odd05:~/CS3560/cs3560/bc818216$ more Assignment3.md 
+Benjamin
+I LOVE the color blue!
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/yrliu0121/cs3560
+   9dd838d..d39e8e7  master     -> origin/master
+Updating 9dd838d..d39e8e7
+Fast-forward
+ bc818216/Assignment3.md | 3 +++
+ 1 file changed, 3 insertions(+)
+bcarman@odd05:~/CS3560/cs3560/bc818216$ more Assignment3.md 
+Benjamin
+I LOVE the color blue!
+I am a computer science major and getting the hang of using git
+I play the saxophone
+I love watching TV but never have the time for it :(
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git log Assignment3.md
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+:...skipping...
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+
+:...skipping...
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+
+commit 06f270a28e6c13206e5a4355e7d63ec32daba383
+Author: Benjamin Carman <bc818216@ohio.edu>
+:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+
+commit 06f270a28e6c13206e5a4355e7d63ec32daba383
+Author: Benjamin Carman <bc818216@ohio.edu>
+:...skipping...
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+
+commit 06f270a28e6c13206e5a4355e7d63ec32daba383
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 11:16:29 2018 -0400
+
+    Created Assignment3.md file and added first name
+~
+~
+bcarman@odd05:~/CS3560/cs3560/bc818216$ git log Assignment3.md
+commit d39e8e71cc94aa5baa524f29e28e82fe4c5424f6
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 13:02:21 2018 -0400
+
+    Added 3 more lines about myself to file Assignment3.md
+
+commit 9dd838dff16dc26cafaab9c9a4b8ab8caa5d8118
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:57:54 2018 -0400
+
+    Added favorite color to file Assignment3.md
+
+commit cbadbf03e0fcb73e7ad66e839b3afee8bb2a18f2
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:55:39 2018 -0400
+
+    Created Assignment3.md file and added first name
+
+commit 51078348af51f4bbba5f3f9d4d7efe372bd60a8c
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 12:53:16 2018 -0400
+
+    Deleted my directory so I can start over
+
+commit 06f270a28e6c13206e5a4355e7d63ec32daba383
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 11:16:29 2018 -0400
+
+    Created Assignment3.md file and added first name
+bcarman@odd05:~/CS3560/cs3560/bc818216$ 
