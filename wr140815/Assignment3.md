@@ -1,1 +1,2 @@
 Wesley
+Favorite color: orange
