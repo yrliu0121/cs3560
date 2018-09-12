@@ -1,2 +1,1 @@
-Colin McKinley
-Red
+Colin McKinley\nRed\nI\nLove\nGit\n
