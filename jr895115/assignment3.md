@@ -1,1 +1,1 @@
-Joseph Ricker
+Joseph-Ricker
