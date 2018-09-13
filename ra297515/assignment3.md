@@ -1,1 +1,2 @@
-Ryan Alcorn
+RYan Alcorn
+Favorite color is blue
