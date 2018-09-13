@@ -1,2 +1,5 @@
 Alexis Lanier
-P100232149
+purple
+I like basketball
+Electrical Engineering
+Junior
