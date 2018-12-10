@@ -1,0 +1,113 @@
+mattraywagner@mattraywagner-VirtualBox:~$ git config --global user.name "mw354017"
+mattraywagner@mattraywagner-VirtualBox:~$ git config --global user.email "mw354017@ohio.edu"
+mattraywagner@mattraywagner-VirtualBox:~$ git config --global push.default simple
+
+mattraywagner@mattraywagner-VirtualBox:~$  git clone https://github.com/yrliu0121/cs3560
+Cloning into 'cs3560'...
+remote: Counting objects: 1021, done.
+remote: Compressing objects: 100% (34/34), done.
+remote: Total 1021 (delta 16), reused 47 (delta 10), pack-reused 965
+Receiving objects: 100% (1021/1021), 5.78 MiB | 3.34 MiB/s, done.
+Resolving deltas: 100% (310/310), done.
+mattraywagner@mattraywagner-VirtualBox:~$ ls
+cs3560   Documents  examples.desktop  Pictures  Templates
+Desktop  Downloads  Music             Public    Videos
+mattraywagner@mattraywagner-VirtualBox:~$ cd cs3560
+mattraywagner@mattraywagner-VirtualBox:~/cs3560$ ls
+aa955414        cm717614            em806915  jr895115  mv836315       tm808217
+ab272816        cw435216            er366315  jr988416  pd040615       tw255917
+ac833914        DanIngramsPush.txt  jc263515  js922516  pf202815       wr140815
+ah852317        di675816            jc402615  jw784615  pk624016       ws998116
+al628814        dr233615            jf335914  jw877415  ra297515       yl051516
+assignment3.md  dt283909            jg782116  mb800915  RenBowers.txt  zh845015
+bc818216        ec456116            jh791615  mj530417  sc573016
+ch629414        ec884814            jm139216  mo957316  sm387316
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560$ cd mw354017
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git add .
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git add .
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git commit
+[master 6c6f7eb] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mw354017/assignment3
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git pull
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 5 (delta 1), reused 5 (delta 1), pack-reused 0
+Unpacking objects: 100% (5/5), done.
+From https://github.com/yrliu0121/cs3560
+   2a3a6ff..367469d  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ sm387316/Screenshots1.jpg  | Bin 0 -> 79519 bytes
+ sm387316/Screenshots2.jpeg | Bin 0 -> 88256 bytes
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sm387316/Screenshots1.jpg
+ create mode 100644 sm387316/Screenshots2.jpeg
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git push
+Password for 'https://mw354017@github.com': 
+Counting objects: 6, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 612 bytes | 612.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560
+   367469d..46750bf  master -> master
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git commit
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+	modified:   assignment3
+
+no changes added to commit
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git add .
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git commit
+[master fa68c01] Added favorite color
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git push
+Password for 'https://mw354017@github.com': 
+Counting objects: 4, done.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 342 bytes | 171.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560
+   46750bf..fa68c01  master -> master
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git add .
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git commit "added 3 lines"
+error: pathspec 'added 3 lines' did not match any file(s) known to git.
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git commit
+[master 33757a7] added 3 lines
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git push
+Password for 'https://mw354017@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/yrliu0121/cs3560/'
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ git push
+Password for 'https://mw354017@github.com': 
+Counting objects: 6, done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 591 bytes | 591.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560
+   4371a82..bc92c33  master -> master
+mattraywagner@mattraywagner-VirtualBox:~/cs3560/mw354017$ 
+

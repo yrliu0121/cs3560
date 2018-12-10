@@ -1,0 +1,1309 @@
+Last login: Sun Sep  9 16:03:58 on ttys000
+Benjamins-MacBook-Pro:~ benjamincarman$ ls
+Applications			Movies
+Applications (Parallels)	Music
+Desktop				Parallels
+Documents			Pictures
+Downloads			Public
+Library				clientOutput
+MPLABXProjects
+Benjamins-MacBook-Pro:~ benjamincarman$ cd Documents
+Benjamins-MacBook-Pro:Documents benjamincarman$ ls
+$RECYCLE.BIN			OneDrive
+Advising:Planning		OneDrive - Ohio University
+Arduino				Other
+Dems				Spring 2018
+Fall 2017			Summer 2018
+Fall 2018			Summer 2018 Research
+General College Documents	Thumbs.db
+High School			Visual Studio 2017
+Benjamins-MacBook-Pro:Documents benjamincarman$ cd "Fall 2018"
+Benjamins-MacBook-Pro:Fall 2018 benjamincarman$ ls
+CS3200	CS3560	CS3610
+Benjamins-MacBook-Pro:Fall 2018 benjamincarman$ cd CS3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ;s
+-bash: syntax error near unexpected token `;'
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+1.Intro.ppt
+2.Virtualization.pptx
+3.Shell.ppt
+CS3560 Introduction.docx
+HW1.SelfIntroduction.doc
+HW2.Virtualization.doc
+Virtual Ubuntu Screenshot.png
+bc818216-BenjaminCarman-Introduction.pdf
+mancala
+mancala.zip
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ git clone https://github.com/yrliu0121/cs3560
+Cloning into 'cs3560'...
+remote: Counting objects: 233, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 233 (delta 6), reused 17 (delta 4), pack-reused 214
+Receiving objects: 100% (233/233), 1.28 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (63/63), done.
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ cd cs3560
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ;s
+-bash: syntax error near unexpected token `;'
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec456116		mb800915
+RenBowers.txt		ec884814		mo957316
+aa955414		er366315		ws998116
+ab272816		jw784615
+ac833914		jw877415
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls -a
+.			aa955414		jw784615
+..			ab272816		jw877415
+.git			ac833914		mb800915
+.gitattributes		ec456116		mo957316
+DanIngramsPush.txt	ec884814		ws998116
+RenBowers.txt		er366315
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ mkdir bc818216
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	bc818216		jw877415
+RenBowers.txt		ec456116		mb800915
+aa955414		ec884814		mo957316
+ab272816		er366315		ws998116
+ac833914		jw784615
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd bc818216
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ atom Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	./
+
+nothing added to commit but untracked files present (use "git add" to track)
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Assignment3.md
+
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Created Assignment3.md file and added first name"
+[master 0c437b9] Created Assignment3.md file and added first name
+ Committer: Benjamin Carman <benjamincarman@Benjamins-MacBook-Pro.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git config --global --edit
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git config --global user.email "bc818216@ohio.edu"
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git config --global user.name "Chang Liu"
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ config --global user.name "Benjamin Carman"
+-bash: config: command not found
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ config --global user.name "Benjamin Carman"
+-bash: config: command not found
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git config --global user.name "Benjamin Carman"
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git config --global --edit
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit --amend --reset-author
+[master eb84550] Created Assignment3.md file and added first name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit --amend --reset-author -m "Updating author and email"
+[master e1dc7ea] Updating author and email
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Username for 'https://github.com': benjamincarman
+Password for 'https://benjamincarman@github.com': 
+remote: Permission to yrliu0121/cs3560.git denied to benjamincarman.
+fatal: unable to access 'https://github.com/yrliu0121/cs3560/': The requested URL returned error: 403
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Username for 'https://github.com': bc818216@ohio.edu
+Password for 'https://bc818216@ohio.edu@github.com': 
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ l
+-bash: l: command not found
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	bc818216		jw877415
+RenBowers.txt		ec456116		mb800915
+aa955414		ec884814		mo957316
+ab272816		er366315		ws998116
+ac833914		jw784615
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ rm -rvf cs3560
+cs3560/.git/COMMIT_EDITMSG
+cs3560/.git/config
+cs3560/.git/description
+cs3560/.git/HEAD
+cs3560/.git/hooks/applypatch-msg.sample
+cs3560/.git/hooks/commit-msg.sample
+cs3560/.git/hooks/post-update.sample
+cs3560/.git/hooks/pre-applypatch.sample
+cs3560/.git/hooks/pre-commit.sample
+cs3560/.git/hooks/pre-push.sample
+cs3560/.git/hooks/pre-rebase.sample
+cs3560/.git/hooks/pre-receive.sample
+cs3560/.git/hooks/prepare-commit-msg.sample
+cs3560/.git/hooks/update.sample
+cs3560/.git/hooks
+cs3560/.git/index
+cs3560/.git/info/exclude
+cs3560/.git/info
+cs3560/.git/logs/HEAD
+cs3560/.git/logs/refs/heads/master
+cs3560/.git/logs/refs/heads
+cs3560/.git/logs/refs/remotes/origin/HEAD
+cs3560/.git/logs/refs/remotes/origin
+cs3560/.git/logs/refs/remotes
+cs3560/.git/logs/refs
+cs3560/.git/logs
+cs3560/.git/objects/0c/437b9a614c646ac0b23edb6a49ae4585633cbd
+cs3560/.git/objects/0c
+cs3560/.git/objects/14/1f018db98a141f8cacb3fd7670200fef962f68
+cs3560/.git/objects/14
+cs3560/.git/objects/e1/4747214be8426ec9ce1ab0ef9c6f405ef170e8
+cs3560/.git/objects/e1/dc7eaeb6056d80bc647ed7c1d152a524518938
+cs3560/.git/objects/e1
+cs3560/.git/objects/e5/b4fa2d136591b0cee26c557bad9f3b3e3b99b6
+cs3560/.git/objects/e5
+cs3560/.git/objects/eb/845502372d712223e2ee4b5e27e6d68d7c0904
+cs3560/.git/objects/eb
+cs3560/.git/objects/info
+cs3560/.git/objects/pack/pack-8cbabc246e901647960498c3cd75f66be7b9c317.idx
+cs3560/.git/objects/pack/pack-8cbabc246e901647960498c3cd75f66be7b9c317.pack
+cs3560/.git/objects/pack
+cs3560/.git/objects
+cs3560/.git/packed-refs
+cs3560/.git/refs/heads/master
+cs3560/.git/refs/heads
+cs3560/.git/refs/remotes/origin/HEAD
+cs3560/.git/refs/remotes/origin
+cs3560/.git/refs/remotes
+cs3560/.git/refs/tags
+cs3560/.git/refs
+cs3560/.git
+cs3560/.gitattributes
+cs3560/aa955414/Assignment3.md
+cs3560/aa955414/Screenshots1.jpg
+cs3560/aa955414/Screenshots2.jpg
+cs3560/aa955414
+cs3560/ab272816/Assignment3.md
+cs3560/ab272816
+cs3560/ac833914/assignment3.md
+cs3560/ac833914
+cs3560/bc818216/Assignment3.md
+cs3560/bc818216
+cs3560/DanIngramsPush.txt
+cs3560/ec456116/Assignment3.md
+cs3560/ec456116/Screenshot1_Git_Status.JPG
+cs3560/ec456116/Screenshots2_GitLog.jpg
+cs3560/ec456116
+cs3560/ec884814/Assignment3.md
+cs3560/ec884814/Screenshots1.jpg
+cs3560/ec884814/Screenshots2.jpg
+cs3560/ec884814
+cs3560/er366315/Assignment3.md
+cs3560/er366315/Screenshot_Tree1_GitStatus.JPG
+cs3560/er366315/Screenshot_Tree2_GitLog.JPG
+cs3560/er366315
+cs3560/jw784615/Assignment3.md
+cs3560/jw784615/screenshot01.jpg
+cs3560/jw784615/screenshot02.jpg
+cs3560/jw784615
+cs3560/jw877415/Assignment3.md
+cs3560/jw877415/Screenshots1.jpg
+cs3560/jw877415/Screenshots2.jpg
+cs3560/jw877415
+cs3560/mb800915/assignment3.md
+cs3560/mb800915/screenshot1.jpg
+cs3560/mb800915/screenshot2.jpg
+cs3560/mb800915/screenshot3.jpg
+cs3560/mb800915/screenshot4.jpg
+cs3560/mb800915/screenshot5.jpg
+cs3560/mb800915
+cs3560/mo957316/Assignment3.md
+cs3560/mo957316/Screenshots1.jpg
+cs3560/mo957316/Screenshots2.jpg
+cs3560/mo957316
+cs3560/RenBowers.txt
+cs3560/ws998116/Assignment3.md
+cs3560/ws998116/Screenshots1.jpg
+cs3560/ws998116/Screenshots2.jpg
+cs3560/ws998116
+cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ script hw3console.txt
+Script started, output file is hw3console.txt
+bash-3.2$ nfdas
+bash: nfdas: command not found
+bash-3.2$ exit
+
+Script done, output file is hw3console.txt
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	hw3console.txt
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ rm hw3console.txt
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+
+
+
+
+
+
+
+
+
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ git config --list
+credential.helper=osxkeychain
+user.email=bc818216@ohio.edu
+user.name=Benjamin Carman
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ git clone https://github.com/yrliu0121/cs3560
+Cloning into 'cs3560'...
+remote: Counting objects: 237, done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 237 (delta 7), reused 20 (delta 4), pack-reused 214
+Receiving objects: 100% (237/237), 1.28 MiB | 177.00 KiB/s, done.
+Resolving deltas: 100% (64/64), done.
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ cd cs3560
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec456116		jw877415
+RenBowers.txt		ec884814		mb800915
+aa955414		er366315		mo957316
+ab272816		jf335914		ws998116
+ac833914		jw784615
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ mkdir bc818216
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	bc818216		jw784615
+RenBowers.txt		ec456116		jw877415
+aa955414		ec884814		mb800915
+ab272816		er366315		mo957316
+ac833914		jf335914		ws998116
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd bc818216
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ atom Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Created Assignment3.md file and added first name"
+[master b5e22ba] Created Assignment3.md file and added first name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Username for 'https://github.com': benjamincarman
+Password for 'https://benjamincarman@github.com': 
+To https://github.com/yrliu0121/cs3560
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/yrliu0121/cs3560'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git fetch
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/yrliu0121/cs3560
+   6bbc2a7..675f36c  master     -> origin/master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git merge
+Merge made by the 'recursive' strategy.
+ ac833914/assignment3.md | 1 +
+ 1 file changed, 1 insertion(+)
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git merge -m "Merging changes to my directory with other students' recent updates"
+Already up-to-date.
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	bc818216		jw784615
+RenBowers.txt		ec456116		jw877415
+aa955414		ec884814		mb800915
+ab272816		er366315		mo957316
+ac833914		jf335914		ws998116
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ rm -rfvi cs3560
+examine files in directory cs3560? y
+examine files in directory cs3560/.git? y
+remove cs3560/.git/COMMIT_EDITMSG? y
+cs3560/.git/COMMIT_EDITMSG
+remove cs3560/.git/config? y
+cs3560/.git/config
+remove cs3560/.git/description? y
+cs3560/.git/description
+remove cs3560/.git/FETCH_HEAD? y
+cs3560/.git/FETCH_HEAD
+remove cs3560/.git/HEAD? y
+cs3560/.git/HEAD
+examine files in directory cs3560/.git/hooks? y
+remove cs3560/.git/hooks/applypatch-msg.sample? y
+cs3560/.git/hooks/applypatch-msg.sample
+remove cs3560/.git/hooks/commit-msg.sample? y
+cs3560/.git/hooks/commit-msg.sample
+remove cs3560/.git/hooks/post-update.sample? y
+cs3560/.git/hooks/post-update.sample
+remove cs3560/.git/hooks/pre-applypatch.sample? ^C
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ rm -rfv cs3560
+cs3560/.git/hooks/pre-applypatch.sample
+cs3560/.git/hooks/pre-commit.sample
+cs3560/.git/hooks/pre-push.sample
+cs3560/.git/hooks/pre-rebase.sample
+cs3560/.git/hooks/pre-receive.sample
+cs3560/.git/hooks/prepare-commit-msg.sample
+cs3560/.git/hooks/update.sample
+cs3560/.git/hooks
+cs3560/.git/index
+cs3560/.git/info/exclude
+cs3560/.git/info
+cs3560/.git/logs/HEAD
+cs3560/.git/logs/refs/heads/master
+cs3560/.git/logs/refs/heads
+cs3560/.git/logs/refs/remotes/origin/HEAD
+cs3560/.git/logs/refs/remotes/origin/master
+cs3560/.git/logs/refs/remotes/origin
+cs3560/.git/logs/refs/remotes
+cs3560/.git/logs/refs
+cs3560/.git/logs
+cs3560/.git/objects/5a/2c5008665822dc18e19f801fa51ff7339d54ca
+cs3560/.git/objects/5a
+cs3560/.git/objects/67/5f36ce099f3c10d9e21c77c4051d209e6d4156
+cs3560/.git/objects/67
+cs3560/.git/objects/96/e2420abe990eacc9021b6ec77ce2106adb49f2
+cs3560/.git/objects/96
+cs3560/.git/objects/b5/e22ba5e5198ee2a5566e82038d0a84ed4489d5
+cs3560/.git/objects/b5
+cs3560/.git/objects/bd/92f63cd1bf96407d292b671bc6fc97fdac4422
+cs3560/.git/objects/bd
+cs3560/.git/objects/c7/96995451f3f338725edc69601a5a9afb71d5b6
+cs3560/.git/objects/c7
+cs3560/.git/objects/cd/0e930eb135c18977d8a55185d3509cf3cb08f5
+cs3560/.git/objects/cd
+cs3560/.git/objects/e1/4747214be8426ec9ce1ab0ef9c6f405ef170e8
+cs3560/.git/objects/e1
+cs3560/.git/objects/e5/b4fa2d136591b0cee26c557bad9f3b3e3b99b6
+cs3560/.git/objects/e5
+cs3560/.git/objects/e9/3e9ac575b06f55fe27f453b8197225c81f2707
+cs3560/.git/objects/e9
+cs3560/.git/objects/info
+cs3560/.git/objects/pack/pack-a08435c6aa07d6ed0ff33ee3e0387a1e4ac80522.idx
+cs3560/.git/objects/pack/pack-a08435c6aa07d6ed0ff33ee3e0387a1e4ac80522.pack
+cs3560/.git/objects/pack
+cs3560/.git/objects
+cs3560/.git/ORIG_HEAD
+cs3560/.git/packed-refs
+cs3560/.git/refs/heads/master
+cs3560/.git/refs/heads
+cs3560/.git/refs/remotes/origin/HEAD
+cs3560/.git/refs/remotes/origin/master
+cs3560/.git/refs/remotes/origin
+cs3560/.git/refs/remotes
+cs3560/.git/refs/tags
+cs3560/.git/refs
+cs3560/.git
+cs3560/.gitattributes
+cs3560/aa955414/Assignment3.md
+cs3560/aa955414/Screenshots1.jpg
+cs3560/aa955414/Screenshots2.jpg
+cs3560/aa955414
+cs3560/ab272816/Assignment3.md
+cs3560/ab272816
+cs3560/ac833914/assignment3.md
+cs3560/ac833914
+cs3560/bc818216/Assignment3.md
+cs3560/bc818216
+cs3560/DanIngramsPush.txt
+cs3560/ec456116/Assignment3.md
+cs3560/ec456116/Screenshot1_Git_Status.JPG
+cs3560/ec456116/Screenshots2_GitLog.jpg
+cs3560/ec456116
+cs3560/ec884814/Assignment3.md
+cs3560/ec884814/Screenshots1.jpg
+cs3560/ec884814/Screenshots2.jpg
+cs3560/ec884814
+cs3560/er366315/Assignment3.md
+cs3560/er366315/Screenshot_Tree1_GitStatus.JPG
+cs3560/er366315/Screenshot_Tree2_GitLog.JPG
+cs3560/er366315
+cs3560/jf335914/Assignment3.md
+cs3560/jf335914
+cs3560/jw784615/Assignment3.md
+cs3560/jw784615/screenshot01.jpg
+cs3560/jw784615/screenshot02.jpg
+cs3560/jw784615
+cs3560/jw877415/Assignment3.md
+cs3560/jw877415/Screenshots1.jpg
+cs3560/jw877415/Screenshots2.jpg
+cs3560/jw877415
+cs3560/mb800915/assignment3.md
+cs3560/mb800915/screenshot1.jpg
+cs3560/mb800915/screenshot2.jpg
+cs3560/mb800915/screenshot3.jpg
+cs3560/mb800915/screenshot4.jpg
+cs3560/mb800915/screenshot5.jpg
+cs3560/mb800915
+cs3560/mo957316/Assignment3.md
+cs3560/mo957316/Screenshots1.jpg
+cs3560/mo957316/Screenshots2.jpg
+cs3560/mo957316
+cs3560/RenBowers.txt
+cs3560/ws998116/Assignment3.md
+cs3560/ws998116/Screenshots1.jpg
+cs3560/ws998116/Screenshots2.jpg
+cs3560/ws998116
+cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ git clone https://github.com/yrliu0121/cs3560
+Cloning into 'cs3560'...
+remote: Counting objects: 245, done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 245 (delta 9), reused 26 (delta 4), pack-reused 214
+Receiving objects: 100% (245/245), 1.28 MiB | 144.00 KiB/s, done.
+Resolving deltas: 100% (66/66), done.
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ cd cs3560
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec456116		jw877415
+RenBowers.txt		ec884814		mb800915
+aa955414		er366315		mo957316
+ab272816		jf335914		ws998116
+ac833914		jw784615
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ mkdir bc818216
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	bc818216		jw784615
+RenBowers.txt		ec456116		jw877415
+aa955414		ec884814		mb800915
+ab272816		er366315		mo957316
+ac833914		jf335914		ws998116
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd bc818216
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ atom Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ atom Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ more *.md
+Benjamin
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Assignment3.md
+
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Created Assignment3.md file and added first name"
+[master 06f270a] Created Assignment3.md file and added first name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+To https://github.com/yrliu0121/cs3560
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/yrliu0121/cs3560'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git fetch
+remote: Counting objects: 10, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 10 (delta 3), reused 9 (delta 2), pack-reused 0
+Unpacking objects: 100% (10/10), done.
+From https://github.com/yrliu0121/cs3560
+   86059a2..9aadcad  master     -> origin/master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 3 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git merge -m "Merging other students recent updates to other directories"
+Merge made by the 'recursive' strategy.
+ jc263515/Assignment3.md | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 jc263515/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+To https://github.com/yrliu0121/cs3560
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/yrliu0121/cs3560'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git fetch
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/yrliu0121/cs3560
+   9aadcad..ca87edc  master     -> origin/master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git pull
+Merge made by the 'recursive' strategy.
+ jc263515/Assignment3.md | 5 +++++
+ 1 file changed, 5 insertions(+)
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Counting objects: 8, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 858 bytes | 0 bytes/s, done.
+Total 8 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560
+   ca87edc..0c0bb17  master -> master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git log
+commit 0c0bb17506c5d616b94c4ea68ad181a589de5db2
+Merge: 36cff45 ca87edc
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 11:17:48 2018 -0400
+
+    Merge branch 'master' of https://github.com/yrliu0121/cs3560
+
+commit 36cff45bcfa45a0fdb890b29ad4e6779252f63fc
+Merge: 06f270a 9aadcad
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 11:17:23 2018 -0400
+
+    Merging other students recent updates to other directories
+
+commit ca87edc285055dfebcb0779c3c7807c5bb307829
+Author: jchud13 <jchud13@gmail.com>
+Date:   Tue Sep 11 11:17:09 2018 -0400
+
+    added 3 more lines of text
+
+commit 06f270a28e6c13206e5a4355e7d63ec32daba383
+Author: Benjamin Carman <bc818216@ohio.edu>
+Date:   Tue Sep 11 11:16:29 2018 -0400
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec456116		jw877415
+RenBowers.txt		ec884814		mb800915
+aa955414		er366315		mo957316
+ab272816		jc263515		ws998116
+ac833914		jf335914
+bc818216		jw784615
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git pull
+remote: Counting objects: 69, done.
+remote: Compressing objects: 100% (47/47), done.
+remote: Total 69 (delta 20), reused 59 (delta 10), pack-reused 0
+Unpacking objects: 100% (69/69), done.
+From https://github.com/yrliu0121/cs3560
+   0c0bb17..404c8c7  master     -> origin/master
+Updating 0c0bb17..404c8c7
+Fast-forward
+ .DS_Store                 | Bin 0 -> 8196 bytes
+ ac833914/Screenshot1.jpg  | Bin 0 -> 44909 bytes
+ ac833914/Screenshot2.jpg  | Bin 0 -> 68431 bytes
+ jc263515/Screenshot2.jpg  | Bin 0 -> 71722 bytes
+ jc263515/screenshot1.jpg  | Bin 0 -> 104384 bytes
+ jc402615/assignment3.md   |   1 +
+ tm808217/Assignment3.md   |   6 ++++++
+ tm808217/Screenshots1.jpg | Bin 0 -> 93270 bytes
+ tm808217/Screenshots2.jpg | Bin 0 -> 92042 bytes
+ wr140815/Assignment3.md   |   5 +++++
+ wr140815/Screenshots1.jpg | Bin 0 -> 48362 bytes
+ wr140815/Screenshots2.jpg | Bin 0 -> 59966 bytes
+ 12 files changed, 12 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 ac833914/Screenshot1.jpg
+ create mode 100644 ac833914/Screenshot2.jpg
+ create mode 100644 jc263515/Screenshot2.jpg
+ create mode 100644 jc263515/screenshot1.jpg
+ create mode 100644 jc402615/assignment3.md
+ create mode 100644 tm808217/Assignment3.md
+ create mode 100644 tm808217/Screenshots1.jpg
+ create mode 100644 tm808217/Screenshots2.jpg
+ create mode 100644 wr140815/Assignment3.md
+ create mode 100644 wr140815/Screenshots1.jpg
+ create mode 100644 wr140815/Screenshots2.jpg
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec884814		mb800915
+RenBowers.txt		er366315		mo957316
+aa955414		jc263515		tm808217
+ab272816		jc402615		wr140815
+ac833914		jf335914		ws998116
+bc818216		jw784615
+ec456116		jw877415
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git rm -rvi bc818216
+error: unknown switch `v'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git rm -ri bc818216
+error: unknown switch `i'
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git rm -r bc818216
+rm 'bc818216/Assignment3.md'
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec884814		jw877415
+RenBowers.txt		er366315		mb800915
+aa955414		jc263515		mo957316
+ab272816		jc402615		tm808217
+ac833914		jf335914		wr140815
+ec456116		jw784615		ws998116
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    bc818216/Assignment3.md
+
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git commit -m "Deleted my directory so I can start over"
+[master 5107834] Deleted my directory so I can start over
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ git push
+Counting objects: 2, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 249 bytes | 0 bytes/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560
+   404c8c7..5107834  master -> master
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ clear
+
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls
+DanIngramsPush.txt	ec884814		jw877415
+RenBowers.txt		er366315		mb800915
+aa955414		jc263515		mo957316
+ab272816		jc402615		tm808217
+ac833914		jf335914		wr140815
+ec456116		jw784615		ws998116
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd ..
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ rm -rfv cs3560
+cs3560/.DS_Store
+cs3560/.git/COMMIT_EDITMSG
+cs3560/.git/config
+cs3560/.git/description
+cs3560/.git/FETCH_HEAD
+cs3560/.git/HEAD
+cs3560/.git/hooks/applypatch-msg.sample
+cs3560/.git/hooks/commit-msg.sample
+cs3560/.git/hooks/post-update.sample
+cs3560/.git/hooks/pre-applypatch.sample
+cs3560/.git/hooks/pre-commit.sample
+cs3560/.git/hooks/pre-push.sample
+cs3560/.git/hooks/pre-rebase.sample
+cs3560/.git/hooks/pre-receive.sample
+cs3560/.git/hooks/prepare-commit-msg.sample
+cs3560/.git/hooks/update.sample
+cs3560/.git/hooks
+cs3560/.git/index
+cs3560/.git/info/exclude
+cs3560/.git/info
+cs3560/.git/logs/HEAD
+cs3560/.git/logs/refs/heads/master
+cs3560/.git/logs/refs/heads
+cs3560/.git/logs/refs/remotes/origin/HEAD
+cs3560/.git/logs/refs/remotes/origin/master
+cs3560/.git/logs/refs/remotes/origin
+cs3560/.git/logs/refs/remotes
+cs3560/.git/logs/refs
+cs3560/.git/logs
+cs3560/.git/objects/02/f5439319082d85e54efc7fff63b25e53f41b09
+cs3560/.git/objects/02
+cs3560/.git/objects/05/bbf6d28e73a62895d496fd0ecc8dd0ca9647fd
+cs3560/.git/objects/05
+cs3560/.git/objects/06/f270a28e6c13206e5a4355e7d63ec32daba383
+cs3560/.git/objects/06
+cs3560/.git/objects/07/f973b7edff41aa1adb9350ad80eec80c20bc49
+cs3560/.git/objects/07
+cs3560/.git/objects/08/3f31faf21cf6601d4dde09c8463c83aa7ba97a
+cs3560/.git/objects/08
+cs3560/.git/objects/0b/270c1ecbb833551bc09ea2dee7e332dfa151f9
+cs3560/.git/objects/0b
+cs3560/.git/objects/0c/0bb17506c5d616b94c4ea68ad181a589de5db2
+cs3560/.git/objects/0c/aa0e65705e5620eacfa87f148b75260a49a5b8
+cs3560/.git/objects/0c
+cs3560/.git/objects/11/7e2b163464d372e24f0d87802e84d70c9d6e1d
+cs3560/.git/objects/11
+cs3560/.git/objects/13/5897a93931c139c0f98c35d6c06ecc33a82b92
+cs3560/.git/objects/13/f6797381f23a29c216f030f05244a5dac5635e
+cs3560/.git/objects/13
+cs3560/.git/objects/14/c8b23028afd6efc06c0b9896a327ccfc030a02
+cs3560/.git/objects/14
+cs3560/.git/objects/15/b47a33753f7b6d3ed5f7ab89a3cf3dfee302eb
+cs3560/.git/objects/15
+cs3560/.git/objects/19/421cdc9f3ad1f661f48d1a4c5f5e98deafb9b4
+cs3560/.git/objects/19/c2548ea529b767c7579f8d5368ef1a916bef2f
+cs3560/.git/objects/19
+cs3560/.git/objects/1b/41a790fe6efb7c09c117f5e6c6b16b3ed5869d
+cs3560/.git/objects/1b/4b5dd552d28f965f38750abb81f466f75ad91c
+cs3560/.git/objects/1b
+cs3560/.git/objects/1c/fa70a9b2a3d214bbc2c06b7cf975fbfe71df8d
+cs3560/.git/objects/1c
+cs3560/.git/objects/1e/5d8774ebbca90c43f3f5106023ed7b89b9523a
+cs3560/.git/objects/1e
+cs3560/.git/objects/1f/27af87ded3d520a6d17be432b52db82ce09c1f
+cs3560/.git/objects/1f
+cs3560/.git/objects/20/03932393111dcfebf56563d05649510ef24eeb
+cs3560/.git/objects/20/2f71c382fc3e5317f15cfd28a9b7f52fd5b5f8
+cs3560/.git/objects/20/e90663db64947c6b1e54d644f330e5613b367f
+cs3560/.git/objects/20
+cs3560/.git/objects/28/fc4eca22cab8439844770595ee9918dc6e695a
+cs3560/.git/objects/28
+cs3560/.git/objects/2c/c0f71363faf3ccadd5d4c17e553149f0fc5f74
+cs3560/.git/objects/2c
+cs3560/.git/objects/2e/bfb352cdd2cd1338eadea0513c3ecc92d059ed
+cs3560/.git/objects/2e
+cs3560/.git/objects/30/8b734e705cd51e2dc3786588e3b63b23b24e35
+cs3560/.git/objects/30
+cs3560/.git/objects/36/cff45bcfa45a0fdb890b29ad4e6779252f63fc
+cs3560/.git/objects/36
+cs3560/.git/objects/3f/b83594fbafc6ef62bcec7bd3488916da27b53c
+cs3560/.git/objects/3f
+cs3560/.git/objects/40/4c8c70802e6a7c8987d178eb83f6a11a4e60cb
+cs3560/.git/objects/40/cfac0e360900c627c05ab92b8c90e8687718ed
+cs3560/.git/objects/40
+cs3560/.git/objects/46/a48699eb263ca8ff27a60e452737f0ac3764b5
+cs3560/.git/objects/46
+cs3560/.git/objects/4c/8c556dbf1fd932eca469f135a4b178f17bf05e
+cs3560/.git/objects/4c
+cs3560/.git/objects/4e/0c129cbc8f3baa7c84a185481b27dbbc58de7b
+cs3560/.git/objects/4e/40f6d80af57494478175c321ac9218a59410ba
+cs3560/.git/objects/4e
+cs3560/.git/objects/51/078348af51f4bbba5f3f9d4d7efe372bd60a8c
+cs3560/.git/objects/51/114d514078554312466ac1608efe02c731af90
+cs3560/.git/objects/51
+cs3560/.git/objects/52/9b3bc8d2a780c68e2bc6fa4c9c811cc445e550
+cs3560/.git/objects/52
+cs3560/.git/objects/54/3f4c7b21828d8784c576091848594652fa4b00
+cs3560/.git/objects/54
+cs3560/.git/objects/57/6d25d8fa1cf9d76b574cd99f189aba34026b84
+cs3560/.git/objects/57/bafcefe5989de57e2049e2831daa5fd6083d27
+cs3560/.git/objects/57
+cs3560/.git/objects/60/146d68e0c1b0e4ae17254c4b2fa601b3bcee0e
+cs3560/.git/objects/60/1938e668019c9df31c5560270ff3b85f6e3c7a
+cs3560/.git/objects/60
+cs3560/.git/objects/63/33da6e6fae9e7934282f384d92eb222bcda586
+cs3560/.git/objects/63
+cs3560/.git/objects/65/fa9c765f3fcf9ed4d9ec97d2de3ea29e3da78f
+cs3560/.git/objects/65
+cs3560/.git/objects/68/a4b24e8623868e7aab65f756bedd735275c7d0
+cs3560/.git/objects/68/a9824a491c4d0da360f89c24c2ef56ef587f18
+cs3560/.git/objects/68
+cs3560/.git/objects/6a/dc5e71f1222572ab4e6eb88d3d1b06d9027e18
+cs3560/.git/objects/6a
+cs3560/.git/objects/71/8064fab203f0130af508f6b08284038c16b6f6
+cs3560/.git/objects/71
+cs3560/.git/objects/73/2c7dec56e772f73a7aad39f70806eb05de9f23
+cs3560/.git/objects/73/2d4249c2b1598748e9b8f5ef02e2cb1945350c
+cs3560/.git/objects/73
+cs3560/.git/objects/78/ac5a4c01746c96df39327c8e3edc1e433822e3
+cs3560/.git/objects/78
+cs3560/.git/objects/7d/6616d8addbd8d520b7f9b9e8f50745073ea20d
+cs3560/.git/objects/7d
+cs3560/.git/objects/80/9e980ab9f9e04ab1afd9e6713996ceee528264
+cs3560/.git/objects/80/d9e747d3eb1ffc457184d5f6b6ae1ab5108cf4
+cs3560/.git/objects/80
+cs3560/.git/objects/81/67147d7be51ffcf9d2b9735978a4ad1786427d
+cs3560/.git/objects/81/a719b032cd961d8819b9d309a16735a562343f
+cs3560/.git/objects/81
+cs3560/.git/objects/89/b64512a2102a459827e2746b0064c7f8d473a4
+cs3560/.git/objects/89
+cs3560/.git/objects/8a/268c9e7326b5e39c4703fee8d4691c0e5f559e
+cs3560/.git/objects/8a
+cs3560/.git/objects/8d/869cee08508be71844cefe23e0cc5ca8482ca2
+cs3560/.git/objects/8d
+cs3560/.git/objects/91/f1b6c9935d3ce03bb8ed877f77e634def94a3f
+cs3560/.git/objects/91
+cs3560/.git/objects/93/7f2a62a9f5e374cf4bc7ff2ea737d4f57ae7e7
+cs3560/.git/objects/93
+cs3560/.git/objects/97/2b9bb87eac0958397dbdef8675f3a6dfd7e38d
+cs3560/.git/objects/97
+cs3560/.git/objects/9a/97e19ef39f0516dcdf494ad0459e06f972d559
+cs3560/.git/objects/9a/adcad8d212de399f8ba46f790721a67bd99dd2
+cs3560/.git/objects/9a
+cs3560/.git/objects/9d/3e9c846f11c091a0aac54ff7ba64c853c50246
+cs3560/.git/objects/9d
+cs3560/.git/objects/9f/3d854e54fc76f4e3d6ad426a8692a6d78691ea
+cs3560/.git/objects/9f
+cs3560/.git/objects/a2/6cbbdf068b33a7dbecbdc8c210d544f945c82f
+cs3560/.git/objects/a2
+cs3560/.git/objects/a3/ad9f72d61c1e45348b08cab21e00310ccc1db0
+cs3560/.git/objects/a3
+cs3560/.git/objects/ad/2eb2125c6ff236c30056099f009e66199b3dd2
+cs3560/.git/objects/ad
+cs3560/.git/objects/ae/744a92ad6292e9bb11be3b70477e72639a827d
+cs3560/.git/objects/ae
+cs3560/.git/objects/b3/a256244545a86dad8d761be9a1db6003bb5730
+cs3560/.git/objects/b3
+cs3560/.git/objects/bf/88ccc9498b2fcdd1f9ea3696011894346e73bb
+cs3560/.git/objects/bf
+cs3560/.git/objects/ca/87edc285055dfebcb0779c3c7807c5bb307829
+cs3560/.git/objects/ca
+cs3560/.git/objects/d1/ae222e51f7ce707452c8357c2e00601fed03b5
+cs3560/.git/objects/d1
+cs3560/.git/objects/d2/1b092a6fe645ed330d66406624b267cc1cd89e
+cs3560/.git/objects/d2/fcb63b235275d4c82cb18cb5aa7f75a0d215db
+cs3560/.git/objects/d2
+cs3560/.git/objects/d8/bdc9dd87685dc512ff52575361263cdad85115
+cs3560/.git/objects/d8
+cs3560/.git/objects/dd/5c296f61e08bde0e652a7dce9c28c535079172
+cs3560/.git/objects/dd
+cs3560/.git/objects/df/e17d924fa06025d3a0d0433a9fef1f421b3031
+cs3560/.git/objects/df
+cs3560/.git/objects/e1/0f07c7706658169830f0204fd225e51d2aa6b7
+cs3560/.git/objects/e1/4747214be8426ec9ce1ab0ef9c6f405ef170e8
+cs3560/.git/objects/e1
+cs3560/.git/objects/e4/4aad20ecea3928b3c2eb3a750e08289f27617c
+cs3560/.git/objects/e4
+cs3560/.git/objects/e5/b4fa2d136591b0cee26c557bad9f3b3e3b99b6
+cs3560/.git/objects/e5/bf439188391c3eedc27f4f653841c99ebb1fc8
+cs3560/.git/objects/e5
+cs3560/.git/objects/e8/37488bc7e4d025517e0381ef20dc51dcdb5822
+cs3560/.git/objects/e8
+cs3560/.git/objects/e9/4e09ef887a0b07a40e1f663a50e56eb955bcd3
+cs3560/.git/objects/e9
+cs3560/.git/objects/ee/7c0a7a59b11a462ec3253f5f4a284ed5e9ab14
+cs3560/.git/objects/ee
+cs3560/.git/objects/f6/65502abf0b1d144d88842a061d23ce09dffb24
+cs3560/.git/objects/f6
+cs3560/.git/objects/f9/75e25a81abaa28ee98105c95f3821b67aa18ca
+cs3560/.git/objects/f9
+cs3560/.git/objects/fd/9e428f17274cd8462dc198142b352130113986
+cs3560/.git/objects/fd
+cs3560/.git/objects/fe/d84ea36620cf057cb8e5828561d81aa79e822a
+cs3560/.git/objects/fe/db4b4c468d9df1d8104c7d22273b081a0c07b4
+cs3560/.git/objects/fe
+cs3560/.git/objects/info
+cs3560/.git/objects/pack/pack-2765b747e115d6a781b790d935787fb94ef5f2c7.idx
+cs3560/.git/objects/pack/pack-2765b747e115d6a781b790d935787fb94ef5f2c7.pack
+cs3560/.git/objects/pack
+cs3560/.git/objects
+cs3560/.git/ORIG_HEAD
+cs3560/.git/packed-refs
+cs3560/.git/refs/heads/master
+cs3560/.git/refs/heads
+cs3560/.git/refs/remotes/origin/HEAD
+cs3560/.git/refs/remotes/origin/master
+cs3560/.git/refs/remotes/origin
+cs3560/.git/refs/remotes
+cs3560/.git/refs/tags
+cs3560/.git/refs
+cs3560/.git
+cs3560/.gitattributes
+cs3560/aa955414/Assignment3.md
+cs3560/aa955414/Screenshots1.jpg
+cs3560/aa955414/Screenshots2.jpg
+cs3560/aa955414
+cs3560/ab272816/Assignment3.md
+cs3560/ab272816
+cs3560/ac833914/assignment3.md
+cs3560/ac833914/Screenshot1.jpg
+cs3560/ac833914/Screenshot2.jpg
+cs3560/ac833914
+cs3560/DanIngramsPush.txt
+cs3560/ec456116/Assignment3.md
+cs3560/ec456116/Screenshot1_Git_Status.JPG
+cs3560/ec456116/Screenshots2_GitLog.jpg
+cs3560/ec456116
+cs3560/ec884814/Assignment3.md
+cs3560/ec884814/Screenshots1.jpg
+cs3560/ec884814/Screenshots2.jpg
+cs3560/ec884814
+cs3560/er366315/Assignment3.md
+cs3560/er366315/Screenshot_Tree1_GitStatus.JPG
+cs3560/er366315/Screenshot_Tree2_GitLog.JPG
+cs3560/er366315
+cs3560/jc263515/Assignment3.md
+cs3560/jc263515/screenshot1.jpg
+cs3560/jc263515/Screenshot2.jpg
+cs3560/jc263515
+cs3560/jc402615/assignment3.md
+cs3560/jc402615
+cs3560/jf335914/Assignment3.md
+cs3560/jf335914
+cs3560/jw784615/Assignment3.md
+cs3560/jw784615/screenshot01.jpg
+cs3560/jw784615/screenshot02.jpg
+cs3560/jw784615
+cs3560/jw877415/Assignment3.md
+cs3560/jw877415/Screenshots1.jpg
+cs3560/jw877415/Screenshots2.jpg
+cs3560/jw877415
+cs3560/mb800915/assignment3.md
+cs3560/mb800915/screenshot1.jpg
+cs3560/mb800915/screenshot2.jpg
+cs3560/mb800915/screenshot3.jpg
+cs3560/mb800915/screenshot4.jpg
+cs3560/mb800915/screenshot5.jpg
+cs3560/mb800915
+cs3560/mo957316/Assignment3.md
+cs3560/mo957316/Screenshots1.jpg
+cs3560/mo957316/Screenshots2.jpg
+cs3560/mo957316
+cs3560/RenBowers.txt
+cs3560/tm808217/Assignment3.md
+cs3560/tm808217/Screenshots1.jpg
+cs3560/tm808217/Screenshots2.jpg
+cs3560/tm808217
+cs3560/wr140815/Assignment3.md
+cs3560/wr140815/Screenshots1.jpg
+cs3560/wr140815/Screenshots2.jpg
+cs3560/wr140815
+cs3560/ws998116/Assignment3.md
+cs3560/ws998116/Screenshots1.jpg
+cs3560/ws998116/Screenshots2.jpg
+cs3560/ws998116
+cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ clear
+
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ git clone https://github.com/yrliu0121/cs3560.git
+Cloning into 'cs3560'...
+remote: Counting objects: 338, done.
+remote: Compressing objects: 100% (79/79), done.
+remote: Total 338 (delta 37), reused 104 (delta 17), pack-reused 214
+Receiving objects: 100% (338/338), 1.79 MiB | 0 bytes/s, done.
+Resolving deltas: 100% (94/94), done.
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ ls
+Assignments	Introduction	Notes		Virtualization	cs3560
+Benjamins-MacBook-Pro:CS3560 benjamincarman$ cd cs3560
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ ls -a
+.			ab272816		jw784615
+..			ac833914		jw877415
+.DS_Store		ec456116		mb800915
+.git			ec884814		mo957316
+.gitattributes		er366315		tm808217
+DanIngramsPush.txt	jc263515		wr140815
+RenBowers.txt		jc402615		ws998116
+aa955414		jf335914
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ mkdir bc818216
+Benjamins-MacBook-Pro:cs3560 benjamincarman$ cd bc818216/
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ vi Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ more *.md
+Benjamin
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add .
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Assignment3.md
+
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Created Assignment3.md file and added first name"
+[master cbadbf0] Created Assignment3.md file and added first name
+ 1 file changed, 1 insertion(+)
+ create mode 100644 bc818216/Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 358 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 2 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560.git
+   5107834..cbadbf0  master -> master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git pull
+remote: Counting objects: 4, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 4 (delta 1), reused 4 (delta 1), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+From https://github.com/yrliu0121/cs3560
+   cbadbf0..9dd838d  master     -> origin/master
+Updating cbadbf0..9dd838d
+Fast-forward
+ bc818216/Assignment3.md | 1 +
+ 1 file changed, 1 insertion(+)
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ ls
+Assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ more *.md
+Benjamin
+I LOVE the color blue!
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ atom Assignment3.md 
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ more Assignment3.md 
+Benjamin
+I LOVE the color blue!
+I am a computer science major and getting the hang of using git
+I play the saxophone
+I love watching TV but never have the time for it :(
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add .
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   Assignment3.md
+
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Added 3 more lines about myself to file Assignment3.md"
+[master d39e8e7] Added 3 more lines about myself to file Assignment3.md
+ 1 file changed, 3 insertions(+)
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 473 bytes | 0 bytes/s, done.
+Total 4 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560.git
+   9dd838d..d39e8e7  master -> master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	Screenshot1.jpg
+	Screenshot2.jpg
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git add *.jpg
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Screenshot1.jpg
+	new file:   Screenshot2.jpg
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git commit -m "Adding screenshots of git commands and output (log and status)"
+[master d1116b9] Adding screenshots of git commands and output (log and status)
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 bc818216/Screenshot1.jpg
+ create mode 100644 bc818216/Screenshot2.jpg
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+To https://github.com/yrliu0121/cs3560.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/yrliu0121/cs3560.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git fetch
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From https://github.com/yrliu0121/cs3560
+   d39e8e7..9bfb0c7  master     -> origin/master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git merge -m "Merging with other studets' changes to separate directories"
+Merge made by the 'recursive' strategy.
+ em806915/assignment3.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 em806915/assignment3.md
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git push
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 134.87 KiB | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/yrliu0121/cs3560.git
+   9bfb0c7..9f7315f  master -> master
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   ../.DS_Store
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Benjamins-MacBook-Pro:bc818216 benjamincarman$ 
